@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0f818ed-64fd-46c4-8a9f-220da8f65d79" name="Changes" comment="test 2: czy są &quot;empty names&quot; w &quot;popular&quot;">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ContactUsTest.java" afterDir="false" />
+    <list default="true" id="b0f818ed-64fd-46c4-8a9f-220da8f65d79" name="Changes" comment="test 3: nie powinien wysylać się pusty formularz w &quot;Contact us&quot;">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/PageTitleUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ContactUsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ContactUsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HomePageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,25 +38,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.ContactUsTest.shouldNotAllowToSendEmptyContactUsForm">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
+}]]></component>
+  <component name="RunManager" selected="JUnit.HomePageTest">
+    <configuration name="ContactUsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ContactUsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactUsTest.shouldNotAllowToSendContactUsFormWithOnlyEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium_training" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ContactUsTest" />
+      <option name="METHOD_NAME" value="shouldNotAllowToSendContactUsFormWithOnlyEmail" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="ContactUsTest.shouldNotAllowToSendEmptyContactUsForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_training" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContactUsTest" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ContactUsTest" />
       <option name="METHOD_NAME" value="shouldNotAllowToSendEmptyContactUsForm" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -61,27 +84,17 @@
     </configuration>
     <configuration name="HomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_training" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.HomePageTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomePageTest.shouldReturnCorrectPageTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Selenium_training" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
-      <option name="METHOD_NAME" value="shouldReturnCorrectPageTitle" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="HomePageTest.shouldSeePopularItemsOnHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_training" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.HomePageTest" />
       <option name="METHOD_NAME" value="shouldSeePopularItemsOnHomePage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -90,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HomePageTest" />
+        <item itemvalue="JUnit.ContactUsTest" />
+        <item itemvalue="JUnit.ContactUsTest.shouldNotAllowToSendContactUsFormWithOnlyEmail" />
         <item itemvalue="JUnit.ContactUsTest.shouldNotAllowToSendEmptyContactUsForm" />
         <item itemvalue="JUnit.HomePageTest.shouldSeePopularItemsOnHomePage" />
-        <item itemvalue="JUnit.HomePageTest.shouldReturnCorrectPageTitle" />
-        <item itemvalue="JUnit.HomePageTest" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -135,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661681704745</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test 3: nie powinien wysylać się pusty formularz w &quot;Contact us&quot;">
+      <created>1661690567513</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661690567513</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +174,7 @@
     <MESSAGE value="set up for the tests in Chrome" />
     <MESSAGE value="test 1: should return correct page title" />
     <MESSAGE value="test 2: czy są &quot;empty names&quot; w &quot;popular&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="test 2: czy są &quot;empty names&quot; w &quot;popular&quot;" />
+    <MESSAGE value="test 3: nie powinien wysylać się pusty formularz w &quot;Contact us&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="test 3: nie powinien wysylać się pusty formularz w &quot;Contact us&quot;" />
   </component>
 </project>
