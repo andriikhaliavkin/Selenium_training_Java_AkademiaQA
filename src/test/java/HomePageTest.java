@@ -1,8 +1,6 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -32,8 +30,10 @@ public class HomePageTest {
     }
 
     @Test
-    public void test() {
-
+    public void shouldReturnCorrectPageTitle() {
+        driver.get("http://automationpractice.com/index.php");
+        Assertions.assertThat(driver.getTitle()).isEqualTo("My Store");
+        System.out.println(driver.getTitle());
     }
 
 

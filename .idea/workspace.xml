@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0f818ed-64fd-46c4-8a9f-220da8f65d79" name="Changes" comment="pom dependencies: Selenium, web driver manager, jUnit 5, assertj; build plugin: maven.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/HomePageTest.java" afterDir="false" />
+    <list default="true" id="b0f818ed-64fd-46c4-8a9f-220da8f65d79" name="Changes" comment="set up for the tests in Chrome">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.HomePageTest.shouldReturnCorrectPageTitle">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="Selenium_training" />
@@ -49,8 +49,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium_training" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.shouldReturnCorrectPageTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium_training" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
+      <option name="METHOD_NAME" value="shouldReturnCorrectPageTitle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HomePageTest.shouldReturnCorrectPageTitle" />
+        <item itemvalue="JUnit.HomePageTest" />
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
@@ -71,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661634466078</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="set up for the tests in Chrome">
+      <created>1661678706927</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661678706927</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,6 +115,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pom dependencies: Selenium, web driver manager, jUnit 5, assertj; build plugin: maven." />
-    <option name="LAST_COMMIT_MESSAGE" value="pom dependencies: Selenium, web driver manager, jUnit 5, assertj; build plugin: maven." />
+    <MESSAGE value="set up for the tests in Chrome" />
+    <option name="LAST_COMMIT_MESSAGE" value="set up for the tests in Chrome" />
   </component>
 </project>
