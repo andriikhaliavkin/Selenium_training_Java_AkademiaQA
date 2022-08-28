@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0f818ed-64fd-46c4-8a9f-220da8f65d79" name="Changes" comment="set up for the tests in Chrome">
+    <list default="true" id="b0f818ed-64fd-46c4-8a9f-220da8f65d79" name="Changes" comment="test 1: should return correct page title">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePageTest.java" afterDir="false" />
     </list>
@@ -41,7 +41,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.HomePageTest.shouldReturnCorrectPageTitle">
+  <component name="RunManager" selected="JUnit.HomePageTest.shouldSeePopularItemsOnHomePage">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="Selenium_training" />
@@ -68,8 +68,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HomePageTest.shouldSeePopularItemsOnHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium_training" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
+      <option name="METHOD_NAME" value="shouldSeePopularItemsOnHomePage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HomePageTest.shouldSeePopularItemsOnHomePage" />
         <item itemvalue="JUnit.HomePageTest.shouldReturnCorrectPageTitle" />
         <item itemvalue="JUnit.HomePageTest" />
         <item itemvalue="Application.Test" />
@@ -99,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661678706927</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test 1: should return correct page title">
+      <created>1661679309418</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661679309418</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +134,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pom dependencies: Selenium, web driver manager, jUnit 5, assertj; build plugin: maven." />
     <MESSAGE value="set up for the tests in Chrome" />
-    <option name="LAST_COMMIT_MESSAGE" value="set up for the tests in Chrome" />
+    <MESSAGE value="test 1: should return correct page title" />
+    <option name="LAST_COMMIT_MESSAGE" value="test 1: should return correct page title" />
   </component>
 </project>
