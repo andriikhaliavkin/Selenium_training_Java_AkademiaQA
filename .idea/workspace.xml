@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0f818ed-64fd-46c4-8a9f-220da8f65d79" name="Changes" comment="test 3: nie powinien wysylać się pusty formularz w &quot;Contact us&quot;">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/PageTitleUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTests.java" afterDir="false" />
+    <list default="true" id="b0f818ed-64fd-46c4-8a9f-220da8f65d79" name="Changes" comment="BaseTests init, PageTitleUtils init, code refactor">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/PopularItemsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ContactUsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ContactUsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HomePageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.HomePageTest">
+  <component name="RunManager" selected="JUnit.HomePageTest.shouldSeePopularItemsOnHomePage">
     <configuration name="ContactUsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_training" />
       <extension name="coverage">
@@ -103,11 +101,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HomePageTest.shouldSeePopularItemsOnHomePage" />
         <item itemvalue="JUnit.HomePageTest" />
         <item itemvalue="JUnit.ContactUsTest" />
         <item itemvalue="JUnit.ContactUsTest.shouldNotAllowToSendContactUsFormWithOnlyEmail" />
         <item itemvalue="JUnit.ContactUsTest.shouldNotAllowToSendEmptyContactUsForm" />
-        <item itemvalue="JUnit.HomePageTest.shouldSeePopularItemsOnHomePage" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661690567513</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="BaseTests init, PageTitleUtils init, code refactor">
+      <created>1661710347908</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661710347908</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,6 +180,7 @@
     <MESSAGE value="test 1: should return correct page title" />
     <MESSAGE value="test 2: czy są &quot;empty names&quot; w &quot;popular&quot;" />
     <MESSAGE value="test 3: nie powinien wysylać się pusty formularz w &quot;Contact us&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="test 3: nie powinien wysylać się pusty formularz w &quot;Contact us&quot;" />
+    <MESSAGE value="BaseTests init, PageTitleUtils init, code refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="BaseTests init, PageTitleUtils init, code refactor" />
   </component>
 </project>

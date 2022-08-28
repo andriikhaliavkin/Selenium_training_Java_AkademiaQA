@@ -1,9 +1,13 @@
 package tests;
 
+import Pages.PopularItemsPage;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import utils.PageTitleUtils;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -11,14 +15,25 @@ import static org.assertj.core.api.Assertions.*;
 
 public class HomePageTest extends BaseTests {
 
+    private PopularItemsPage popularItemsPage;
+
+    @BeforeEach
+    public void setupTest() {
+        driver = new ChromeDriver();
+        driver.get(BASE_URL);
+        assertThat(driver.getTitle()).isEqualTo(PageTitleUtils.HOME_PAGE_TITLE);
+
+        popularItemsPage = new PopularItemsPage(driver);
+    }
+
     @Test
     public void shouldSeePopularItemsOnHomePage() {
 
-        List<WebElement> productNames = driver.findElements(By.cssSelector("#homefeatured .product-name"));
-        List<WebElement> productsWithEmpyName = productNames.stream()
-                .filter(productName -> productName.getText().isEmpty())
+        List<String> productNames = popularItemsPage.getProductNames();
+        List<String> productsWithEmptyName = productNames.stream()
+                .filter(productName -> productName.isEmpty())
                 .collect(Collectors.toList());
-        assertThat(productsWithEmpyName).isEmpty();
+        assertThat(productsWithEmptyName).isEmpty();
     }
 
 

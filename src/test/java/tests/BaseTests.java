@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class BaseTests {
 
-    private static final String BASE_URL = "http://automationpractice.com/index.php";
+    protected static final String BASE_URL = "http://automationpractice.com/index.php";
     protected WebDriver driver;
 
     @BeforeAll
@@ -20,12 +20,7 @@ public class BaseTests {
         WebDriverManager.chromedriver().setup();
     }
 
-    @BeforeEach
-    public void setupTest() {
-        driver = new ChromeDriver();
-        driver.get(BASE_URL);
-        assertThat(driver.getTitle()).isEqualTo(PageTitleUtils.HOME_PAGE_TITLE);
-    }
+
 
     @AfterEach
     public void teardown() {
