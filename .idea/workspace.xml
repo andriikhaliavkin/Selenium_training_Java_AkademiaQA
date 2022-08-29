@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0f818ed-64fd-46c4-8a9f-220da8f65d79" name="Changes" comment="page object dla top menu + refactor w ContactUsTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/ContactUsFormPage.java" afterDir="false" />
+    <list default="true" id="b0f818ed-64fd-46c4-8a9f-220da8f65d79" name="Changes" comment="page object dla ContactUsFormPage + refactor w ContactUsTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ContactUsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ContactUsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/ContactUsFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/ContactUsFormPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +42,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.HomePageTest.shouldSeePopularItemsOnHomePage">
+  <component name="RunManager" selected="JUnit.ContactUsTest">
     <configuration name="ContactUsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_training" />
       <extension name="coverage">
@@ -100,9 +99,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContactUsTest" />
         <item itemvalue="JUnit.HomePageTest.shouldSeePopularItemsOnHomePage" />
         <item itemvalue="JUnit.HomePageTest" />
-        <item itemvalue="JUnit.ContactUsTest" />
         <item itemvalue="JUnit.ContactUsTest.shouldNotAllowToSendContactUsFormWithOnlyEmail" />
         <item itemvalue="JUnit.ContactUsTest.shouldNotAllowToSendEmptyContactUsForm" />
       </list>
@@ -173,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661745547642</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="page object dla ContactUsFormPage + refactor w ContactUsTest">
+      <created>1661746137718</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661746137718</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +202,7 @@
     <MESSAGE value="BaseTests init, PageTitleUtils init, code refactor" />
     <MESSAGE value="page object dla &quot;popular items&quot; + refactor zgodnie z POP" />
     <MESSAGE value="page object dla top menu + refactor w ContactUsTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="page object dla top menu + refactor w ContactUsTest" />
+    <MESSAGE value="page object dla ContactUsFormPage + refactor w ContactUsTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="page object dla ContactUsFormPage + refactor w ContactUsTest" />
   </component>
 </project>

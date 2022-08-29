@@ -34,7 +34,7 @@ public class ContactUsTest extends BaseTests {
 //        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         topMenuPage.clickContactUsLink();
         contactUsFormPage.clickSubmitMessageButton();
-        assertThat(driver.findElement(By.className("alert-danger")).isDisplayed()).isTrue();
+        assertThat(contactUsFormPage.isAlertDangerDisplayed()).isTrue();
     }
 
     @Test
@@ -43,6 +43,6 @@ public class ContactUsTest extends BaseTests {
         topMenuPage.clickContactUsLink();
         driver.findElement(By.id("email")).sendKeys("test@test.com");
         contactUsFormPage.clickSubmitMessageButton();
-        assertThat(driver.findElement(By.className("alert-danger")).isDisplayed()).isTrue();
+        assertThat(contactUsFormPage.isAlertDangerDisplayed()).isTrue();
     }
 }
