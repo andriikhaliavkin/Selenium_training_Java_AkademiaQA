@@ -5,13 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class ContactUsFormPage {
 
-    private WebDriver wait;
     public ContactUsFormPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
@@ -21,6 +17,9 @@ public class ContactUsFormPage {
 
     @FindBy(className = "alert-danger")
     WebElement alertDanger;
+
+    @FindBy(id = "email")
+    WebElement emailInput;
 
     public void clickSubmitMessageButton() {
         submitMessageButton.click();
@@ -33,6 +32,10 @@ public class ContactUsFormPage {
             isDisplayed = alertDanger.isDisplayed();
         } catch (NoSuchElementException e) { }
         return isDisplayed;
+    }
+
+    public void enterEmail(String email) {
+        emailInput.sendKeys(email);
     }
 
 

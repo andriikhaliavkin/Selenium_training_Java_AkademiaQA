@@ -1,10 +1,7 @@
 package tests;
 
 import Pages.PopularItemsPage;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import utils.PageTitleUtils;
 

@@ -2,11 +2,9 @@ package tests;
 
 
 import Pages.ContactUsFormPage;
-import Pages.PopularItemsPage;
 import Pages.TopMenuPage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import utils.PageTitleUtils;
 
@@ -31,7 +29,7 @@ public class ContactUsTest extends BaseTests {
 
     @Test
     public void shouldNotAllowToSendEmptyContactUsForm() {
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         topMenuPage.clickContactUsLink();
         contactUsFormPage.clickSubmitMessageButton();
         assertThat(contactUsFormPage.isAlertDangerDisplayed()).isTrue();
@@ -39,9 +37,9 @@ public class ContactUsTest extends BaseTests {
 
     @Test
     public void shouldNotAllowToSendContactUsFormWithOnlyEmail() {
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         topMenuPage.clickContactUsLink();
-        driver.findElement(By.id("email")).sendKeys("test@test.com");
+        contactUsFormPage.enterEmail("test@test.com");
         contactUsFormPage.clickSubmitMessageButton();
         assertThat(contactUsFormPage.isAlertDangerDisplayed()).isTrue();
     }
