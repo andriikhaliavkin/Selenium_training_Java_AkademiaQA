@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0f818ed-64fd-46c4-8a9f-220da8f65d79" name="Changes" comment="page object dla &quot;popular items&quot; + refactor zgodnie z POP">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/TopMenuPage.java" afterDir="false" />
+    <list default="true" id="b0f818ed-64fd-46c4-8a9f-220da8f65d79" name="Changes" comment="page object dla top menu + refactor w ContactUsTest">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/ContactUsFormPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ContactUsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ContactUsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661712400752</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="page object dla top menu + refactor w ContactUsTest">
+      <created>1661745547642</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661745547642</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,6 +195,7 @@
     <MESSAGE value="test 3: nie powinien wysylać się pusty formularz w &quot;Contact us&quot;" />
     <MESSAGE value="BaseTests init, PageTitleUtils init, code refactor" />
     <MESSAGE value="page object dla &quot;popular items&quot; + refactor zgodnie z POP" />
-    <option name="LAST_COMMIT_MESSAGE" value="page object dla &quot;popular items&quot; + refactor zgodnie z POP" />
+    <MESSAGE value="page object dla top menu + refactor w ContactUsTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="page object dla top menu + refactor w ContactUsTest" />
   </component>
 </project>

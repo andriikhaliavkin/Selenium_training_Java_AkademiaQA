@@ -1,6 +1,7 @@
 package tests;
 
 
+import Pages.ContactUsFormPage;
 import Pages.PopularItemsPage;
 import Pages.TopMenuPage;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,6 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class ContactUsTest extends BaseTests {
 
     private TopMenuPage topMenuPage;
+    private ContactUsFormPage contactUsFormPage;
 
     @BeforeEach
     public void setupTest() {
@@ -23,13 +25,15 @@ public class ContactUsTest extends BaseTests {
         assertThat(driver.getTitle()).isEqualTo(PageTitleUtils.HOME_PAGE_TITLE);
 
         topMenuPage = new TopMenuPage(driver);
+        contactUsFormPage = new ContactUsFormPage(driver);
+
     }
 
     @Test
     public void shouldNotAllowToSendEmptyContactUsForm() {
 //        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         topMenuPage.clickContactUsLink();
-        driver.findElement(By.id("submitMessage")).click();
+        contactUsFormPage.clickSubmitMessageButton();
         assertThat(driver.findElement(By.className("alert-danger")).isDisplayed()).isTrue();
     }
 
@@ -38,7 +42,7 @@ public class ContactUsTest extends BaseTests {
 //        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         topMenuPage.clickContactUsLink();
         driver.findElement(By.id("email")).sendKeys("test@test.com");
-        driver.findElement(By.id("submitMessage")).click();
+        contactUsFormPage.clickSubmitMessageButton();
         assertThat(driver.findElement(By.className("alert-danger")).isDisplayed()).isTrue();
     }
 }
