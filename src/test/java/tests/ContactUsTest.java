@@ -3,6 +3,8 @@ package tests;
 
 import Pages.ContactUsFormPage;
 import Pages.TopMenuPage;
+import enums.MessageSubject;
+import model.Message;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -43,4 +45,23 @@ public class ContactUsTest extends BaseTests {
         contactUsFormPage.clickSubmitMessageButton();
         assertThat(contactUsFormPage.isAlertDangerDisplayed()).isTrue();
     }
+
+    @Test
+    public void shouldSendContactUsFromWithValidData() {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        topMenuPage.clickContactUsLink();
+
+        Message message = new Message();
+        message.setSubject(MessageSubject.CUSTOMER_SERVICE);
+        message.setEmail("test@test.com");
+        message.setOrderReference("12345");
+        message.setMessage("Test message");
+
+        contactUsFormPage.sendContactUsForm(message);
+
+        assertThat(contactUsFormPage.isGreenAlertBoxDisplayed()).isTrue();
+    }
+
+
+
 }
