@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0f818ed-64fd-46c4-8a9f-220da8f65d79" name="Changes" comment="base page init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/enums/MessageSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Message.java" afterDir="false" />
+    <list default="true" id="b0f818ed-64fd-46c4-8a9f-220da8f65d79" name="Changes" comment="contact us form test with valid data">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/ContactUsFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/ContactUsFormPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ContactUsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ContactUsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +44,7 @@
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ContactUsTest.shouldSendContactUsFromWithValidData">
+  <component name="RunManager" selected="JUnit.HomePageTest.shouldSeePopularItemsOnHomePage">
     <configuration name="ContactUsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_training" />
       <extension name="coverage">
@@ -110,10 +107,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HomePageTest.shouldSeePopularItemsOnHomePage" />
         <item itemvalue="JUnit.ContactUsTest.shouldSendContactUsFromWithValidData" />
         <item itemvalue="JUnit.ContactUsTest" />
         <item itemvalue="JUnit.HomePageTest" />
-        <item itemvalue="JUnit.HomePageTest.shouldSeePopularItemsOnHomePage" />
         <item itemvalue="JUnit.ContactUsTest.shouldNotAllowToSendContactUsFormWithOnlyEmail" />
       </list>
     </recent_temporary>
@@ -211,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662025091136</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="contact us form test with valid data">
+      <created>1662041392054</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662041392054</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,6 +242,7 @@
     <MESSAGE value="page object dla alertDanger + refactor assercji." />
     <MESSAGE value="page object dla email + refactor w ContactUsTest" />
     <MESSAGE value="base page init" />
-    <option name="LAST_COMMIT_MESSAGE" value="base page init" />
+    <MESSAGE value="contact us form test with valid data" />
+    <option name="LAST_COMMIT_MESSAGE" value="contact us form test with valid data" />
   </component>
 </project>
